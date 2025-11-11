@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 609901972}
-  _controller: {fileID: 0}
+  _controller: {fileID: 609901973}
   _moveAction:
     m_Name: Move
     m_Type: 0
@@ -363,6 +363,31 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 550ef142a7241f94aad03cd60b82f8bb, type: 3}
   m_PrefabInstance: {fileID: 1883605080}
   m_PrefabAsset: {fileID: 0}
+--- !u!143 &609901973
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609901969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 0.12
+  m_Radius: 0.02
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.05, z: 0}
 --- !u!1 &1202969382
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,14 +530,14 @@ MonoBehaviour:
   Radius: 10
   Orbits:
     Top:
-      Radius: 1.16
-      Height: 3.64
+      Radius: 1.1
+      Height: 2.82
     Center:
-      Radius: 3.69
-      Height: 2.49
+      Radius: 2.88
+      Height: 1.88
     Bottom:
-      Radius: 1.54
-      Height: 0.47
+      Radius: 1.71
+      Height: 0.59
     SplineCurvature: 0.5
   RecenteringTarget: 2
   HorizontalAxis:
@@ -596,8 +621,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202969382}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.119546905, y: -0.000000003492464, z: 4.2052906e-10, w: 0.99282855}
-  m_LocalPosition: {x: 235.2899, y: 250.42, z: 148.77942}
+  m_LocalRotation: {x: 0.11195587, y: -1.910768e-15, z: 4.415241e-16, w: 0.9937132}
+  m_LocalPosition: {x: 235.2899, y: 249.81, z: 149.58942}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -721,8 +746,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269417646}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.119546905, y: -0.0000000034924643, z: 4.205291e-10, w: 0.99282855}
-  m_LocalPosition: {x: 235.2899, y: 250.42, z: 148.77942}
+  m_LocalRotation: {x: 0.111955896, y: -1.8849505e-15, z: 2.123664e-16, w: 0.9937132}
+  m_LocalPosition: {x: 235.2899, y: 249.81, z: 149.58942}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -813,6 +838,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 550ef142a7241f94aad03cd60b82f8bb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 609901971}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 550ef142a7241f94aad03cd60b82f8bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 609901973}
   m_SourcePrefab: {fileID: 100100000, guid: 550ef142a7241f94aad03cd60b82f8bb, type: 3}
 --- !u!1 &1941033737
 GameObject:
